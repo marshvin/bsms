@@ -4,7 +4,7 @@ use AfricasTalking\SDK\AfricasTalking;
 
 // Set your app credentials
 $username = "bulk101";
-$apiKey = "7c5801693580fdc05becab38394b6e5ed60edb024aa4508b77ab5293ba82f607";
+$apiKey = "";
 
 // Initialize the SDK
 $AT = new AfricasTalking($username, $apiKey);
