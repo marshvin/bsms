@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iJq+pdTz+8qzOu80aZRPOpLXRvMEEx6q5NqU2lE+J4uPPaF5Z9bSLGiLb" crossorigin="anonymous">
+</head>
+
+<body class="flex flex-col min-h-screen bg-blue-100">
+
+    <header class="bg-blue-800 text-white text-center py-4">
+        <h1 class="text-2xl font-bold">Welcome, Developers!</h1>
+        <p class="text-sm md:text-base mt-2">Join our community and unleash your potential.</p>
+    </header>
+
+    <div class="card flex flex-col-reverse md:flex-row border rounded overflow-hidden shadow-md my-8 mx-auto">
+        <div class="form-container p-6 md:w-1/2">
+            
+            <form method="post" action="sms.php">
+                <label class="block text-sm font-medium text-gray-600" for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required
+                    class="mt-1 p-2 w-full border rounded-md">
+
+                    <label class="block text-sm font-medium text-gray-600" for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" required
+                            class="mt-1 p-2 w-full border rounded-md">    
+
+                <label class="block text-sm font-medium text-gray-600" for="email">Email:</label>
+                <input type="email" id="email" name="email" required
+                    class="mt-1 p-2 w-full border rounded-md">
+
+                <label class="block text-sm font-medium text-gray-600" for="age">Age:</label>
+                <input type="number" id="age" name="age" required
+                    class="mt-1 p-2 w-full border rounded-md">
+
+                <label class="block text-sm font-medium text-gray-600" for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required
+                    class="mt-1 p-2 w-full border rounded-md">
+
+                    <label class="block text-sm font-medium text-gray-600" for="phone_number">Phone Number:</label>
+                <input type="text" id="phone_number" name="phone_number" required
+                    class="mt-1 p-2 w-full border rounded-md">
+
+
+                <label class="block text-sm font-medium text-gray-600" for="ageRange">Years of Experience:</label>
+                <select id="ageRange" name="ageRange" class="mt-1 p-2 w-full border rounded-md">
+                    <option value="0-1">0-1</option>
+                    <option value="1-4">1-4</option>
+                    <option value="4-7">4-7</option>
+                </select>
+
+                <label class="block text-sm font-medium text-gray-600" for="password">Password:</label>
+                <input type="password" id="password" name="password" required
+                    class="mt-1 p-2 w-full border rounded-md">
+                    <label class="block text-sm font-medium text-gray-600" for="password">Github Link:</label>
+                <input type="github_link" id="github_link" name="github_link" required
+                    class="mt-1 p-2 w-full border rounded-md">
+
+                <input type="submit" value="Register"
+                    class="mt-4 px-4 py-2 bg-green-500 text-white rounded cursor-pointer hover:bg-green-600">
+            </form>
+
+        </div>
+        <div class="image-container md:w-1/2">
+            <img src="images/dev-removebg-preview.png" alt="Registration Image" class="w-full h-auto rounded-l-md md:rounded-l-none md:rounded-r-md">
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto flex justify-between items-center">
+                <div>
+                    <h2 class="text-2xl font-bold">Stay Connected</h2>
+                    <p class="mt-2">Follow us on social media for updates and news.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-300 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300 transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300 transition duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Contact Us</h2>
+                    <p class="mt-2">Feel free to reach out if you have any questions.</p>
+                    <p class="mt-2"><i class="far fa-envelope"></i> info@example.com</p>
+                </div>
+            </div>
+            
+        </footer>
+    </footer>
+
+</body>
+
+</html>

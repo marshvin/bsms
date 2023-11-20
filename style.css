@@ -1,0 +1,19 @@
+.image-container{
+    animation: move 1s infinite;
+    
+}
+
+@keyframes move {
+    0%{
+        transform: translateY(-10px);
+    }
+
+
+    50%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
